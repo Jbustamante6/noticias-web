@@ -24,7 +24,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/screens/default.css",
+              "src/assets/css/screens/xs.css",
+              "src/assets/css/screens/sm.css",
+              "src/assets/css/screens/md.css",
+              "src/assets/css/screens/lg.css",
+              "src/assets/css/screens/xl.css",
+              "src/assets/css/screens/xxl.css"
             ],
             "scripts": []
           },
@@ -119,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "noticias-web"
+    }
+  },
+  "defaultProject": "noticias-web",
+  "cli": {
+    "analytics": "09244388-86a0-400a-b5e4-ba21145c9eb0"
+  }
 }
