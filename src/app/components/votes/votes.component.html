@@ -1,1 +1,9 @@
-<p>votes works!</p>
+
+<div class="d-flex absolute votes-cotainer">
+  <div class="like font-20 font-weight-300 color-base-100 py-10 px-10 text-left" [style.width.%]="like">
+    {{like}}%<i class="bi bi-hand-thumbs-up-fill font-20"></i>
+  </div>
+  <div class="dont-like font-20 font-weight-300 color-base-100 py-10 px-10 text-right" [style.width.%]="dontlike">
+    {{dontlike}}%<i class="bi bi-hand-thumbs-down-fill font-20"></i>
+  </div>
+</div>

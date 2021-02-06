@@ -1,1 +1,7 @@
-<p>alert-information works!</p>
+<div #alertInfo class="w-100 px-20 py-10 relative {{backgroundClass}} relative overflow-hidden">
+  <ng-content></ng-content>
+  <img *ngIf="backgroundImage" class="bg-image" [src]="backgroundImage" alt="">
+  <button class="close-button" (click)="closeAlert()" *ngIf="isClosable">
+    <i class="bi bi-x"></i>
+  </button>
+</div>

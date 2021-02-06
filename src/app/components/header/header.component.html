@@ -1,1 +1,19 @@
-<p>header works!</p>
+<header #headerNav class="header">
+  <nav class="d-flex flex-between container flex-middle">
+
+    <div class="d-block d-sm-flex d-xs-flex">
+      <button class="btn-menu d-none d-sm-block d-xs-block mr-10" (click)="toogleMenu()">
+        <i class="bi bi-justify font-28"></i>
+      </button>
+      <h2>Rule of thumb</h2>
+    </div>
+    <div class="options d-flex flex-between d-sm-none d-xs-none">
+      <a href="">Past Trials</a>
+      <a href="">How it works</a>
+      <a href="">Login / Sign Up</a>
+      <a href="">
+        <i class="bi bi-search"></i>
+      </a>
+    </div>
+  </nav>
+</header>
