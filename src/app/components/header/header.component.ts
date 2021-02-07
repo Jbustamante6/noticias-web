@@ -20,8 +20,6 @@ export class HeaderComponent implements OnInit {
       this.renderer.addClass(this.headerNav.nativeElement, 'active');      
     }
     this.isOpen = !this.isOpen;
-
-    console.log(this.isOpen);
   }
 
 }

@@ -13,4 +13,10 @@ export class VotesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  percent(value: number): number{
+    const total = (this.dontlike + this.like);
+    const val = value * 100 / total;
+    return Math.round(val);
+  }
+
 }
