@@ -1,0 +1,42 @@
+[
+  {
+    "uuid":"314ba07e-b16f-40e7-b298-9b86dc05b258",
+    "title": "Kanye West",
+    "published_at": "1 month",
+    "category": "Entertainment",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quos, aut, sit quam molestiae",
+    "like": 20,
+    "dontlike": 10,
+    "src_photo": "https://i.kym-cdn.com/photos/images/original/000/654/145/eb8.jpg"
+  },
+  {
+    "uuid":"7615b4bc-495f-49ed-940d-d86377f6e9d2",
+    "title": "Mark Zuckerberg",
+    "published_at": "1 month",
+    "category": "Business",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quos, aut, sit quam molestiae",
+    "like": 10,
+    "dontlike": 25,
+    "src_photo": "https://ep01.epimg.net/elpais/imagenes/2020/07/14/icon/1594733353_235035_1594733900_noticia_normal.jpg"
+  },
+  {
+    "uuid":"bb4ba3dc-dbe3-4338-9fdd-44eda3b00d4c",
+    "title": "Cristina Fernandez",
+    "published_at": "1 month",
+    "category": "Politics",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quos, aut, sit quam molestiae",
+    "like": 12,
+    "dontlike": 16,
+    "src_photo": "https://s.france24.com/media/display/4dc9223c-7976-11e9-915b-005056bff430/w:1280/p:16x9/cristina_candidata.webp"
+  },
+  {
+    "uuid":"b0969196-c0f8-45d4-97ea-13ca00e081c5",
+    "title": "Malala Yousafzai",
+    "published_at": "1 month",
+    "category": "Entertainment",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quos, aut, sit quam molestiae",
+    "like": 16,
+    "dontlike": 3,
+    "src_photo": "https://www.un.org/sites/un2.un.org/files/styles/large-article-image-style-16-9/public/field/image/1581095492.1494.jpg?itok=NmO5GBRy"
+  }
+] 

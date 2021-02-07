@@ -7,19 +7,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/index/index.module').then((m) => m.IndexModule),
   },
-  {
-    path: 'news',
-    loadChildren: () =>
-      import('./pages/news/news.module').then((m) => m.NewsModule),
-  },
-  {
-    path: 'not-found',
-    loadChildren: () =>
-      import('./pages/not-found/not-found.module').then(
-        (m) => m.NotFoundModule
-      ),
-  },
-  { path: '**', redirectTo: 'not-found' },
+  { path: '**', redirectTo: ''}
 ];
 
 @NgModule({

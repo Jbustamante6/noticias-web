@@ -25,13 +25,15 @@
             ],
             "styles": [
               "src/styles.css",
+              "src/assets/css/normalize.css",
               "src/assets/css/screens/default.css",
               "src/assets/css/screens/xs.css",
               "src/assets/css/screens/sm.css",
               "src/assets/css/screens/md.css",
               "src/assets/css/screens/lg.css",
               "src/assets/css/screens/xl.css",
-              "src/assets/css/screens/xxl.css"
+              "src/assets/css/screens/xxl.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
             "scripts": []
           },

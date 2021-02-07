@@ -2,12 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrincipalComponent } from './principal.component';
 
-
-
 @NgModule({
   declarations: [PrincipalComponent],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports:[PrincipalComponent]
 })
-export class PrincipalModule { }
+export class PrincipalModule {}

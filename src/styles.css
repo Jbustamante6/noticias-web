@@ -1,7 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  /* text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;  */
+}
+
+*:focus,
+*:active {
+  outline: 0;
+}
 
 * {
   font-family: 'Lato', sans-serif;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.aspect-ratio {
+  --aspect-ratio: 1/1;
+  position: relative;
+  height: 0;
+  padding-bottom: calc(100%/var(--aspect-ratio));
+
+}
+
+.aspect-ratio > img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn{
+  background: transparent;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: 45px;
+  padding: 5px 20px;
+  line-height: 18px;
 }

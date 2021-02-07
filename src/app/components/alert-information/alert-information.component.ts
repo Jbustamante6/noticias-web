@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-alert-information',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertInformationComponent implements OnInit {
 
-  constructor() { }
+  @Input() isClosable = false;
+  @Input() backgroundClass:string = null;
+  @Input() backgroundImage:string = null;
+
+  @ViewChild('alertInfo') alertInfo:ElementRef;
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
+  }
+
+  closeAlert(){
+    this.renderer.addClass(this.alertInfo.nativeElement, 'd-none');
   }
 
 }

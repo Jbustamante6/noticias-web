@@ -1,0 +1,40 @@
+<div class="aspect-ratio">
+  <img [src]="item.src_photo" class="w-100" alt="">
+</div>
+<div class="content-card px-40 py-30 mb-40">
+  <h2 class="font-45 color-base-100 font-weight-300 mb-10 mt-0 lh-12">{{item.title}}</h2>
+  <div class="font-12 color-base-100"><span class="font-weight-700">{{item.published_at}}</span> in {{item.category}}
+  </div>
+  <p class="mt-0 color-base-100 lh-1" *ngIf="registerVote">{{item.description}}</p>
+  <p class="mt-0 color-base-100 lh-1" *ngIf="!registerVote">Thank you for voting</p>
+  <div class="d-flex flex-middle" *ngIf="registerVote">
+    <div class="votes">
+      <input type="radio" [name]="item.uuid" #like [id]="item.uuid + 'like'" [value]="true">
+      <label class="bg-teal-600" [for]="item.uuid + 'like'">
+        <i class="bi bi-hand-thumbs-up-fill"></i>
+      </label>
+    </div>
+    <div class="votes">
+      <input type="radio" [name]="item.uuid" #dontLine [id]="item.uuid + 'dontlike'" [value]="false">
+      <label class="bg-yellow-400" [for]="item.uuid + 'dontlike'">
+        <i class="bi bi-hand-thumbs-down-fill"></i>
+      </label>
+    </div>
+    <button class="btn-vote" (click)="votesClick(item.uuid, like.checked ? true : dontLine.checked ? false : null)">
+      Vote now
+    </button>
+
+  </div>
+  <div class="d-flex flex-middle mt-20" *ngIf="!registerVote">
+    <button class="btn-vote" (click)="registerVote = !registerVote">
+      Vote again
+    </button>
+  </div>
+
+  <span class="calification"
+    [ngClass]="{'bg-yellow-400': item.dontlike > item.like, 'bg-teal-600': item.like >= item.dontlike}">
+    <i class="bi"
+      [ngClass]="{'bi-hand-thumbs-down-fill': item.dontlike > item.like, 'bi-hand-thumbs-up-fill': item.like >= item.dontlike}"></i>
+  </span>
+</div>
+<app-votes [like]="item.like" [dontlike]="item.dontlike"></app-votes>
